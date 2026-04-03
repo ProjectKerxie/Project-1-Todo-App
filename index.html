@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our TODO App</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Josefine Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>TODO</h1>
+        <img src="icons/icon-moon.svg" alt="half moon icon">
+    </header>
+
+    <section class="add-section">
+        <label for="add-task"></label>
+        <input type="checkbox" name="done-task" id="done-task">
+        <input type="text" id="add-task" placeholder="Create a new to do...">
+    </section>
+    
+    <section class="list-section">
+        <ul>
+            <li>
+                <!-- html structure for each item in the list -->
+                <label for="created-task"></label>
+                <input type="checkbox" name="done-task" id="created-task">
+                <input type="text" id="created-task" placeholder="todo1 ...">
+                <img src="icons/icon-cross.svg" alt="">
+            </li>
+            <li>
+                <!-- html structure for each item in the list -->
+                <label for="created-task"></label>
+                <input type="checkbox" name="done-task" id="created-task">
+                <input type="text" id="created-task" placeholder="todo2 ...">
+                <img src="icons/icon-cross.svg" alt="">
+            </li>
+        </ul>
+    </section>
+
+    <section class="state-section">
+        <p>5 items left</p>
+        <ul>
+            <li>All</li>
+            <li>Active</li>
+            <li>Completed</li>
+        </ul>
+        <p>5 items left</p>
+    </section>
+
+    <footer>
+        <p>Drag and drop to reorder list</p>
+    </footer>
+</body>
+
+</html>
